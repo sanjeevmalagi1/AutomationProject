@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+<title>SMYS portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Easy Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Graph CSS -->
+<link href="css/font-awesome.css" rel="stylesheet">
+<!-- jQuery -->
+<!-- lined-icons -->
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<!-- //lined-icons -->
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+<!----webfonts--->
+<link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<!---//webfonts--->
+ <!-- Meters graphs -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<!-- Placed js at the end of the document so the pages load faster -->
+
+</head>
+
+<body class="sticky-header left-side-collapsed">
+    <div id="loadingModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <img src="images/loader1.gif" class="img-responsive">
+        </div>
+
+      </div>
+    </div>
+    <section>
+		<ui-view name="content"></ui-view>
+	</section>
+    <!--Third-party JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="content/native/angular.min.js"></script>
+    <script src="content/native/angular-route.js"></script>
+	  <script src="content/native/angular-ui-router.min.js"></script>
+
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router.statehelper/1.3.1/statehelper.min.js"></script-->
+
+    <script src="app/app.module.js"></script>
+
+		<!--Directives module-->
+    <script src="app/Directives/Directives.module.js"></script>
+    
+		<script src="app/Directives/Sidemenu/Sidemenu.directive.js"></script>
+
+
+    <script src="app/Control/Control.module.js"></script>
+    <script src="app/Control/config.route.js"></script>
+		<script src="app/Control/Control.controller.js"></script>
+
+		<script src="app/Settings/Settings.module.js"></script>
+    <script src="app/Settings/config.route.js"></script>
+		<script src="app/Settings/Settings.controller.js"></script>
+
+</body>
+</html>
